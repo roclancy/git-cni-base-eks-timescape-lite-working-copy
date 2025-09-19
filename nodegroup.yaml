@@ -1,0 +1,11 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: xxxx-your-cluster-name-xxxx
+  region: xxxx-your-aws-region-xxxxx
+
+managedNodeGroups:
+- name: standard
+  instanceType: m5.4xlarge
+  desiredCapacity: 2
+  privateNetworking: true
