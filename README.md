@@ -3,7 +3,7 @@ MAC OS <br />
 
 What this script will do <br /> 
 ================================
-Contained within this repo is a script to download and run to install Isovalent enterprise and Hubble Timescape (lit) UI using the various helm charts 
+Contained within this repo is a script to download and run to install Isovalent enterprise and Hubble Timescape (lite) UI using the various helm charts 
 Isovalent Base install Document which this script is based on:<br /> 
 https://docs.isovalent.com/v1.17/operations-guide/installation/eks-install.html#<br /> 
 <br /> 
