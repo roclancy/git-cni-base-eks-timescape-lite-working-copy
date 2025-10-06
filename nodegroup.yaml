@@ -6,6 +6,6 @@ metadata:
 
 managedNodeGroups:
 - name: standard
-  instanceType: m5.4xlarge
+  instanceType: m5.large
   desiredCapacity: 2
   privateNetworking: true
