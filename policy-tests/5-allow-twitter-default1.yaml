@@ -1,0 +1,28 @@
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: allow-twitter
+  namespace: tenant-a
+spec:
+  endpointSelector: {}
+  ingress:
+    - fromEndpoints:
+        - {}
+  egress:
+    - toFQDNs:
+        - matchName: api.twitter.com
+    - toEndpoints:
+        - {}
+    - toEndpoints:
+        - matchLabels:
+            io.kubernetes.pod.namespace: kube-system
+            k8s-app: kube-dns
+      toPorts:
+        - rules:
+            dns:
+              - matchPattern: "*"
+          ports:
+            - port: "53"
+              protocol: UDP
+    - toEntities:
+        - cluster
