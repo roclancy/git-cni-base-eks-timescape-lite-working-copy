@@ -52,12 +52,10 @@ https://docs.isovalent.com/v1.17/operations-guide/installation/eks-install.html#
 NOTE:<br /> 
 ========================
 <br /> 
-You will see an error message after installing the Helm charts, this is due to the helm chart waiting for the certificte (for TLS) pod<br />
-to be created but this will not move to a running pod until the EKS nodes are created which is the <br />
-next step after the error message.<br />
+You will see an error message after installing the Helm charts, this is due to the helm chart waiting for the certificates (for TLS) pod<br />
+to be created but this will not move to a running pod until the EKS nodes are created which is the next step after the error message.<br />
 <br />
-This is the error message note for reference <br />
-<br />
+Below is the error message note for reference: <br />
 <br />
 "****************************************"<br />
 "THE ABOVE ERROR MESSAGE IS BECAUSE THE NODES HAVE NOT BEEN CREATED, AND THE POD FOR THE CERT IS WAITING TO BE ASSIGNED"<br />
