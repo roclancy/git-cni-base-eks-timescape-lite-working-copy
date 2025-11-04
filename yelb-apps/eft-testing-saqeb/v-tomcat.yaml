@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: v-tomcat
+spec:
+  selector:
+    matchLabels:
+      app: cassandra
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: cassandra
+    spec:
+      containers:
+      - name: v-tomcat
+        image: robclancy/v-tomcat
+        ports:
+        - containerPort: 80
+
